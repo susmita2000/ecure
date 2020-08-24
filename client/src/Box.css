@@ -1,0 +1,42 @@
+
+
+.box {
+  margin: 20px;
+}
+
+.grid {
+  min-height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid > div {
+  flex-basis: calc(40% - 40px);
+}
+
+.boxy {
+  width: 100px;
+  background: green;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.boxy:hover {
+  animation: boxyRotation 4s infinite linear;
+}
+
+@keyframes boxyRotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.black-background {
+  background-color: red !important;
+  font-size: 5vh;
+  border-radius: 10px 10px 10px 10px;
+}
