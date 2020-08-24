@@ -20,7 +20,7 @@ import DoctorDashboard from './components/doctordasboard/Dashboard';
 
 import Navbar from './components/navbar/navbar';
 import PrivateNavbar from './components/privateroutes/PrivateNavbar'
-import filedisplay from "./components/filedisplay/filedisplay";
+import filedisplay from "./components/doctorfiledisplay/filedisplay";
 import Map from './components/landing/map';
 
 
@@ -73,8 +73,8 @@ class App extends Component {
             <Route exact path="/doctor/verify" component={DoctorVerify} />
             <Route exact path="/doctor/login" component={DoctorLogin} />
             <Route exact path="/doctor/dashboard" component={DoctorDashboard} />
-            <Route   exact  path="./filedisplay" component={filedisplay}/>
-            <Route   exact  path="./fileupload" component={filedisplay}/>
+            <Route   exact  path="/doctor/filedisplay" component={filedisplay}/>
+            <Route   exact  path="/doctor/fileupload" component={filedisplay}/>
                   
                           </div>
         </Router>

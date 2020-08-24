@@ -11,7 +11,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import DashboardCard from './DashboardCard';
-
+import {Link} from "react-router-dom"; 
 import {useHistory} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -145,7 +145,17 @@ const Application = (props) => {
       
         <div className={classes.root}>
                 <Toolbar/>
-                 
+                 <Link to =  '/doctor/fileupload'>
+             <Typography variant="h6"  style={{textAlign: "center", marginLeft:"2vh" ,color : "black" , fontFamily:'Roboto'}}>
+            File upload 
+          </Typography>
+           </Link>
+            <Link to =  '/doctor/filedisplay'>
+             <Typography variant="h6"  style={{textAlign: "center", marginLeft:"2vh" ,color : "black" , fontFamily:'Roboto'}}>
+            View Files
+          </Typography>
+
+           </Link>
                 <Grid container className={classes.main}>
                     <Grid item xs={12} lg={4} >
                       <React.Fragment>

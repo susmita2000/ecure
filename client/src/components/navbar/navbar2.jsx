@@ -29,17 +29,7 @@ class Navbar2 extends Component {
               E Cure
           </Typography>
           </Link>
-          <Link to =  './fileupload'>
-             <Typography variant="h6"  style={{textAlign: "center", marginLeft:"2vh" ,color : "black" , fontFamily:'Roboto'}}>
-            File upload 
-          </Typography>
-           </Link>
-            <Link to =  './filedisplay'>
-             <Typography variant="h6"  style={{textAlign: "center", marginLeft:"2vh" ,color : "black" , fontFamily:'Roboto'}}>
-            View Files
-          </Typography>
-
-           </Link>
+          
             
           <Typography variant="h6"  style={{marginLeft: "auto", color : "black" , fontFamily:'Roboto'}}>
             Hey {user.name}  
